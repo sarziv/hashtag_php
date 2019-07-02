@@ -9,7 +9,7 @@ $api = new ApiController();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hashtag_PHP_clear</title>
+    <title>Hashtag_PHP_List</title>
 </head>
 <body>
 <div>
