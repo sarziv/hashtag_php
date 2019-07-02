@@ -2,7 +2,8 @@
 
 class GenerateTree extends ApiController
 {
-       public function buildTree($array) {
+        //index.php
+       public function  buildTree($array) {
            $output = ' <ul>';
             foreach ($array as $key => $element){
                 $output .= "<li id=".$key.">" . $element['category_name'] . $this->buildTree($element['childrens']) . '</li>';
@@ -10,7 +11,7 @@ class GenerateTree extends ApiController
            $output .= '</ul>';
            return $output;
         }
-
+        //List.php
        public function buildTreeList($array) {
         foreach ($array as $key => $element){
             echo $element['category_name'] . $this->buildTreeList($element['childrens']);

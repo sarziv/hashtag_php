@@ -26,9 +26,9 @@ class ApiController
 
         return $err ? $err : json_decode($response,true);
     }
-
+    /*
     public function get_data_copy_full(){
         $data = file_get_contents('data.json');
         return json_decode($data,true);
-    }
+    }*/
 }
